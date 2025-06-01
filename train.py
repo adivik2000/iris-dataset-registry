@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn import metrics
 import pickle
 import joblib
-data = pd.read_csv('data/iris_data.csv')
+data = pd.read_csv('iris.csv')
 data.head(5)
 
 train, test = train_test_split(data, test_size = 0.4, stratify = data['species'], random_state = 42)
